@@ -1,27 +1,42 @@
-# Proyek Pemrograman Web - Praktikum 1
+# Modul Web Programming: Aesthetic Edition
 
-Repositori ini berisi materi latihan dan tugas praktikum pertama untuk mata kuliah Pemrograman Web. Fokus utama dari proyek ini adalah pemahaman struktur dasar HTML, styling menggunakan CSS, dan sedikit interaksi menggunakan JavaScript.
+![GitHub Top Language](https://img.shields.io/github/languages/top/rainaa268/PRATIKKUM-1?color=ff69b4&style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Development-lightgrey?style=for-the-badge&color=f06292)
 
-##  Struktur File
-Di dalam folder ini terdapat beberapa file utama:
-* `index.html` - Struktur utama halaman web.
-* `style.css` - Desain dan tata letak halaman (menggunakan palet warna pink soft).
-* `script.js` - Logika dasar untuk interaksi pada halaman.
-* `assets/` - Berisi aset gambar yang digunakan dalam proyek.
+Selamat datang di repositori **PRATIKKUM - 1**. Proyek ini adalah modul pembelajaran pemrograman web yang mengintegrasikan **HTML5**, **CSS3**, dan **PHP** dengan antarmuka yang dirancang menggunakan palet warna *Soft Pink* yang estetik.
 
-##  Teknologi yang Digunakan
-* **HTML5**: Untuk membangun kerangka website.
-* **CSS3**: Untuk mempercantik tampilan UI.
-* **JavaScript**: Untuk fungsionalitas tambahan.
-* **Git & GitHub**: Sebagai sistem kontrol versi.
+##  Fitur Utama
+*   **Aesthetic UI**: Desain responsif dengan tema warna pink yang nyaman dipandang.
+*   **Koneksi Database**: Integrasi CRUD dasar menggunakan PHP dan MySQL.
+*   **Data Mahasiswa**: Fitur input data mahasiswa yang tersimpan secara dinamis ke database `belajar_db`.
+*   **Materi Terstruktur**: Dilengkapi dengan bagian edukatif mengenai dasar-dasar HTML dan CSS.
 
-##  Cara Menjalankan
-1. Clone repositori ini ke komputer lokal:
-   ```bash
-   git clone [ https://github.com/raina1234-png/raina_pemograman-.git](https://github.com/raina1234-png/raina_pemograman-.git)
+## Teknologi yang Digunakan
+*   **Frontend**: HTML5, CSS3 (Google Fonts: Quicksand & Playfair Display).
+*   **Backend**: PHP (Native).
+*   **Database**: MySQL / MariaDB.
+*   **Server**: Laragon / XAMPP.
 
-## Tampilan Pratinjau
-![screenshot web](PRAKTIKUM_1/screenshot.web/tampilan 1)
-![screenshot web](PRAKTIKUM_1/screenshot.web/tampilan 2)
-![screenshot web](PRAKTIKUM_1/screenshot.web/tampilan 3)
-![screenshot web](PRAKTIKUM_1/screenshot.web/tampilan 4)
+
+## Cara Menjalankan Secara Lokal
+
+1.  **Clone Repositori**:
+    ```bash
+    git clone [https://github.com/rainaa268/PRATIKKUM-1.git](https://github.com/rainaa268/PRATIKKUM-1.git)
+    ```
+2.  **Siapkan Database**:
+    *   Buka `phpMyAdmin`.
+    *   Buat database baru bernama `belajar_db`.
+    *   Import atau buat tabel `users` dengan kolom `id`, `nama`, dan `email`.
+3.  **Pindahkan File**:
+    Letakkan folder proyek di dalam direktori `www` (Laragon) atau `htdocs` (XAMPP).
+4.  **Akses via Browser**:
+    Buka `localhost/nama-folder-kamu/index.php`.
+
+##  Tentang Pengembang
+Proyek ini dikembangkan oleh **Rara (Raina)** sebagai bagian dari tugas mata kuliah Teknik Informatika di **Universitas Muhammadiyah Sukabumi (UMMI)**.
+
+---
+<p align="center">
+  Dibuat dengan  dan kopi oleh <b>rainaa268</b>
+</p>
