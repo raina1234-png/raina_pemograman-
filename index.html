@@ -4,33 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modul Web Programming - Aesthetic Pink Edition</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Internal untuk Tema Pink */
+        :root {
+            --pink-light: #fce4ec;
+            --pink-medium: #f8bbd0;
+            --pink-strong: #f06292;
+            --pink-dark: #d81b60;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--pink-light);
+            color: #444;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--pink-medium);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--pink-dark);
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(216, 27, 96, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            background: var(--pink-strong);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: var(--pink-dark);
+            border-left: 5px solid var(--pink-strong);
+            padding-left: 15px;
+        }
+
+        .aesthetic-profile-img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            margin: 20px 0;
+            filter: sepia(20%) hue-rotate(320deg); /* Memberikan tone pink pada gambar */
+        }
+
+        /* Styling Tabel */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+        }
+
+        .styled-table thead tr {
+            background-color: var(--pink-strong);
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid var(--pink-light);
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #fff9fb;
+        }
+
+        /* Styling Form */
+        .form-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid var(--pink-medium);
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .form-container button {
+            background-color: var(--pink-strong);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: var(--pink-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--pink-dark);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <div class="header-content animate-pop">
-            <h1>Materi Pemrograman Web</h1>
-            <p>Selamat Datang Di Pemogramanan Web!</p>
-        </div>
+        <h1>Materi Pemrograman Web</h1>
+        <p>Belajar HTML & CSS dengan Gaya yang Estetik</p>
     </header>
 
     <main class="container">
-        <section class="card animate-up">
+        
+        <!-- Bagian HTML -->
+        <section class="card">
             <div class="badge">Part 1</div>
             <h2>HTML5: Pondasi Utama</h2>
             
-            <div class="card-image-wrapper">
-                <img src="download.png" alt="Ilustrasi Coding HTML" class="aesthetic-profile-img">
-            </div>
-            <p>HTML adalah kerangka rumah digital Anda. Tanpanya, tidak akan ada konten yang bisa ditampilkan.</p>
+            <img src="download.png" alt="Ilustrasi Coding HTML" class="aesthetic-profile-img">
             
-            <div class="code-preview">
-                <code>&lt;!DOCTYPE html&gt;</code>
-            </div>
-
-            <h3>Struktur Tabel Data</h3>
+            <p>HTML adalah kerangka utama dari sebuah website. Tanpanya, website tidak memiliki struktur untuk menampilkan informasi.</p>
+            
+            <h3>Data Mata Kuliah</h3>
             <table class="styled-table">
                 <thead>
                     <tr>
@@ -47,62 +172,40 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Sistem Operasi</td>
+                        <td>Desain Antarmuka</td>
                         <td>Pilihan</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section class="card animate-up" style="animation-delay: 0.2s;">
+        <!-- Bagian CSS -->
+        <section class="card">
             <div class="badge">Part 2</div>
             <h2>CSS3: Estetika Visual</h2>
 
-            <div class="card-image-wrapper">
-                <img src="download (3).png" alt="Ilustrasi Desain CSS" class="aesthetic-profile-img">
-            </div>
-            <p>CSS memberikan "jiwa" dan keindahan pada setiap elemen HTML yang telah kita buat.</p>
+            <img src="download (3).png" alt="Ilustrasi Desain CSS" class="aesthetic-profile-img">
             
-            <div class="box-model-demo">
-                <div class="outer-box">
-                    <div class="inner-box">Box Model Demo</div>
-                </div>
-            </div>
-
+            <p>CSS digunakan untuk mengatur tampilan visual agar website terlihat menarik bagi pengguna.</p>
+            
             <div class="form-container">
-                <h3>Hubungi Dosen</h3>
-                <form>
-                    <input type="text" placeholder="Nama Lengkap" >
-                    <input type="email" placeholder="Email Mahasiswa" >
+                <h3>Hubungi Kami</h3>
+                <!-- Form HTML Murni (Action dikosongkan) -->
+                <form action="#">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email Mahasiswa" required>
                     <button type="submit">Kirim Pesan</button>
                 </form>
             </div>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Belajar Web Desain - Aesthetic Pink Theme</p>
     </footer>
 
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Internal JS</title>
-</head>
-<body>
-    <h1 id="teks">Teks Asli</h1>
-
-    <script>
-        // Ini adalah Internal JavaScript
-        document.getElementById("teks").innerHTML = "Isi Bagian Dibawah Ini!";
-    </script>
-
-<button onclick="alert('Halo! Ini adalah Inline JavaScript')">Klik Saya</button>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
